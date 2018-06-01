@@ -1,0 +1,172 @@
+[
+	{
+		"totalVolume": 900000,
+		"volume": 4500,
+		"price": 240.01
+	},
+	{
+		"totalVolume": 1094000,
+		"volume": 250,
+		"price": 240.00
+	},
+	{
+		"totalVolume": 1120000,
+		"volume": 20000,
+		"price": 239.95
+	},
+	{
+		"totalVolume": 1150000,
+		"volume": 100,
+		"price": 239.95
+	},
+	{
+		"totalVolume": 1210000,
+		"volume": 1000000,
+		"price": 235.00
+	},
+	{
+		"totalVolume": 1255000,
+		"volume": 4500,
+		"price": 234.99
+	},
+	{
+		"totalVolume": 1290000,
+		"volume": 50000,
+		"price": 234.50
+	},
+	{
+		"totalVolume": 1300000,
+		"volume": 4000,
+		"price": 234.34
+	},
+	{
+		"totalVolume": 1360000,
+		"volume": 2400,
+		"price": 230.05
+	},
+	{
+		"totalVolume": 1400000,
+		"volume": 100000,
+		"price": 230.00
+	},
+	{
+		"totalVolume": 1470000,
+		"volume": 400,
+		"price": 230.00
+	},
+	{
+		"totalVolume": 1560000,
+		"volume": 12000,
+		"price": 229.45
+	},
+	{
+		"totalVolume": 1700000,
+		"volume": 4000,
+		"price": 234.34
+	},
+	{
+		"totalVolume": 1800000,
+		"volume": 2400,
+		"price": 230.05
+	},
+	{
+		"totalVolume": 1880600,
+		"volume": 100000,
+		"price": 230.00
+	},
+	{
+		"totalVolume": 1900600,
+		"volume": 400,
+		"price": 230.00
+	},
+	{
+		"totalVolume": 2000000,
+		"volume": 12000,
+		"price": 229.45
+	},
+	{
+		"totalVolume": 910000,
+		"volume": 3556,
+		"price": 241.01
+	},
+	{
+		"totalVolume": 954000,
+		"volume": 250,
+		"price": 240.00
+	},
+	{
+		"totalVolume": 992000,
+		"volume": 20000,
+		"price": 239.95
+	},
+	{
+		"totalVolume": 1150000,
+		"volume": 100,
+		"price": 239.95
+	},
+	{
+		"totalVolume": 1210000,
+		"volume": 1000000,
+		"price": 235.00
+	},
+	{
+		"totalVolume": 1255000,
+		"volume": 4500,
+		"price": 234.99
+	},
+	{
+		"totalVolume": 1290000,
+		"volume": 50000,
+		"price": 234.50
+	},
+	{
+		"totalVolume": 1300000,
+		"volume": 4000,
+		"price": 234.34
+	},
+	{
+		"totalVolume": 1360000,
+		"volume": 2400,
+		"price": 230.05
+	},
+	{
+		"totalVolume": 1400000,
+		"volume": 100000,
+		"price": 230.00
+	},
+	{
+		"totalVolume": 1470000,
+		"volume": 400,
+		"price": 230.00
+	},
+	{
+		"totalVolume": 1560000,
+		"volume": 12000,
+		"price": 229.45
+	},
+	{
+		"totalVolume": 1700000,
+		"volume": 4000,
+		"price": 234.34
+	},
+	{
+		"totalVolume": 1800000,
+		"volume": 2400,
+		"price": 230.05
+	},
+	{
+		"totalVolume": 1880600,
+		"volume": 100000,
+		"price": 230.00
+	},
+	{
+		"totalVolume": 1900600,
+		"volume": 400,
+		"price": 230.00
+	},
+	{
+		"totalVolume": 2000000,
+		"volume": 12000,
+		"price": 229.45
+	}
+]

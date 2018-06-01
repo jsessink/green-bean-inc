@@ -1,0 +1,170 @@
+@import '../../_variables.scss';
+
+h2 {
+	background-color : $color-secondary;
+	padding          : 0.5rem 1rem;
+	font-size        : 1rem;
+	font-weight      : 400;
+}
+
+h3 {
+	font-size   : 0.9rem;
+	font-weight : 400;
+}
+
+section {
+	border-right: 2px solid darken($color-primary, 5%);
+
+	> div {
+		padding: 0 1.5rem;
+	}
+
+	header {
+		margin         : 0.25rem;
+		padding-bottom : 0.5rem;
+		border-bottom  : 1px solid $color-secondary;
+		font-size      : 0.7rem;
+	}
+
+	.spread {
+		border-top    : 1px solid $color-secondary;
+		border-bottom : 1px solid $color-secondary;
+		font-size     : 0.7rem;
+		margin        : 0.5rem 0;
+		padding       : 0.5rem 0;
+
+		span {
+			font-weight: 900;
+		}
+	}
+
+	&.orders {
+		border-left: 2px solid darken($color-primary, 5%);
+
+		h3 {
+			margin : 0.25rem;
+		}
+
+		.buy-row {
+			height      : 38vh;
+			overflow    : hidden;
+			padding-top : 0.5rem;
+
+			mat-list mat-list-item div {
+				color: $color-buy;
+			}
+		}
+
+		.sell-row {
+			padding-bottom : 0.5rem;
+
+			mat-list {
+				height   : 35vh;
+				overflow : hidden;
+
+				mat-list-item {
+
+					&:last-child {
+						div {
+							color: $color-sell;
+						}
+					}
+
+					div {
+						color: lighten($color-secondary, 15%);
+					}
+				}
+			}
+		}
+
+		/deep/mat-list {
+			padding-top: 0;
+
+			mat-list-item {
+				height    : auto; // removes the height from material
+				font-size : 0.75rem;
+
+				div {
+					margin-bottom: 0;
+				}
+
+				.mat-list-item-content {
+					padding: 0;
+				}
+			}
+		}
+	}
+
+	&.chart {
+
+		h2 {
+			margin-bottom: 0;
+		}
+
+		> div {
+			padding: 0;
+		}
+	}
+
+	&.history {
+
+		/deep/mat-list {
+
+			mat-list-item {
+				color     : $color-buy;
+				font-size : 0.75rem;
+				height    : auto; // removes the height from material
+
+				.mat-list-item-content {
+					padding : 0 0.25rem;
+					
+					div {
+						color: lighten($color-secondary, 15%);
+						
+						&.history-col1 {
+							color: $color-buy;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&.personal-history {
+		border-right: 0;
+
+		header {
+			padding-left: 1.5rem;
+		}
+
+		/deep/mat-list {
+			padding-left: 1.5rem;
+			
+			mat-list-item {
+				color     : $color-buy;
+				font-size : 0.75rem;
+				height    : auto; // removes the height from material
+
+				.mat-list-item-content {
+					padding : 0 0.25rem;
+					
+					div {
+						color: lighten($color-secondary, 15%);
+						
+						&.history-col1 {
+							color: $color-buy;
+						}
+						
+						&.history-col-last {
+							cursor : pointer;
+							
+							a {
+								color : $color-blue;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

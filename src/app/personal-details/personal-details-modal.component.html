@@ -1,0 +1,25 @@
+<div fxLayout="row">
+	<section fxFlex="100">
+		<h2 style="padding-bottom: 2rem;">Details on Your Order</h2>
+		<header fxLayout="row" style="font-weight: bold; padding-bottom: 0.5rem;">
+			<div fxFlex="16.667">Date Filled</div>
+			<div fxFlex="16.667">Price (USD)</div>
+			<div fxFlex="16.667">Volume Ordered</div>
+			<div fxFlex="16.667">Shipping Agreement (PPV)</div>
+			<div fxFlex="16.667">Taxes and Fees</div>
+			<div fxFlex="16.667">Total Price</div>
+		</header>
+		<div fxLayout="row">
+			<div fxFlex="16.667" style="text-align: left;">Jun 1, 2018 15:22 CST</div>
+			<div fxFlex="16.667">5.99 (USD)</div>
+			<div fxFlex="16.667">15000 (LBs)</div>
+			<div fxFlex="16.667">5.64 (USD)</div>
+			<div fxFlex="16.667">4941.75 (USD)</div>
+			<div fxFlex="16.667">94791.75 (USD)</div>
+		</div>
+		<div style="text-align: right; padding-top: 2rem;">
+			<button mat-raised-button color="warn" style="margin-right: 1rem;">Shipping Details - <i>Pending...</i></button>
+			<button mat-raised-button color="primary" (click)="openSmartContract()">Smart Contract</button>
+		</div>
+	</section>
+</div>

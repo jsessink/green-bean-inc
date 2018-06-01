@@ -1,0 +1,82 @@
+<div fxLayout="row">
+	<section fxFlex="25" class="orders">
+		<h2>Order Book</h2>
+		<div fxLayout="column">
+			<div class="sell-row">
+				<header fxLayout="row">
+					<div fxFlex="50">Price (USD)</div>
+					<div fxFlex="50">Current Total Volume</div>
+				</header>
+				<mat-list>
+					<mat-list-item *ngFor="let data of sellBookData">
+						<div fxFlex="50">{{ data.price }}</div>
+						<div fxFlex="56">{{ data.volume }}</div>
+					</mat-list-item>
+				</mat-list>
+			</div>
+			<div fxLayout="row" class="spread">
+				<div fxFlex="65"></div>
+				<div fxFlex="35">Price (USD) Spread: <span *ngIf="buyBookData && sellBookData">{{ buyBookData[0].price - sellBookData[0].price | number:'0.1-5' }}</span></div>
+			</div>
+			<div class="buy-row">
+				<header fxLayout="row">
+					<div fxFlex="50">Price (USD)</div>
+					<div fxFlex="50">Volume</div>
+				</header>
+				<mat-list>
+					<mat-list-item *ngFor="let data of buyBookData">
+						<div fxFlex="50">{{ data.price }}</div>
+						<div fxFlex="56">{{ data.volume }}</div>
+					</mat-list-item>
+				</mat-list>
+			</div>
+		</div>
+	</section>
+	<section fxFlex="50" class="chart">
+		<h2>Price Chart - <strong style="color: #dec924;">Kona Bean | Bean Factory</strong></h2>
+		<!-- <div style="background: #37444c; border-top: 2px solid #1d2b35; font-size: 34px; text-align: center; padding-top: 10rem; padding-bottom: 10rem;">Big ole' Graph</div> -->
+		<div [chart]="chart"></div>
+
+		<section class="personal-history">
+			<h2>Your Order History</h2>
+			<div *ngIf="!personalDetailInfo.length"><p style="padding: 1rem; color: #576c78"><i>You currently have no order history!</i></p></div>
+			<div *ngIf="personalDetailInfo.length">
+				<header fxLayout="row">
+					<div fxFlex="25">Date</div>
+					<div fxFlex="25">Price (USD)</div>
+					<div fxFlex="25">Volume Ordered</div>
+					<div fxFlex="25">Details</div>
+				</header>
+				<mat-list>
+					<mat-list-item *ngFor="let data of personalDetailInfo">
+						<div fxFlex="25" class="history-col1">{{ data.date | date }}</div>
+						<div fxFlex="25">{{ data.price }}</div>
+						<div fxFlex="25">{{ data.volume }}</div>
+						<div fxFlex="25" class="history-col-last" (click)="openPersonalDetails()"><a>More Information</a></div>
+					</mat-list-item>
+				</mat-list>
+			</div>
+		</section>
+	</section>
+	<section fxFlex="25" class="history">
+		<h2>Buy (Order) History</h2>
+		<div fxLayout="column">
+			<header fxLayout="row">
+				<div fxFlex="20">Price (USD)</div>
+				<div fxFlex="36">Total Volume</div>
+				<div fxFlex="44">Volume Ordered</div>
+			</header>
+			<mat-list>
+				<mat-list-item *ngFor="let data of filledOrderData">
+					<div fxFlex="20" class="history-col1">{{ data.price }}</div>
+					<div fxFlex="36">{{ data.totalVolume }}</div>
+					<div fxFlex="44">{{ data.volume }}</div>
+				</mat-list-item>
+			</mat-list>
+		</div>
+	</section>
+</div>
+
+<!-- <p>
+	<button (click)="addNewRandomData()" mat-raised-button>Add New OHLCV</button>
+</p> -->
